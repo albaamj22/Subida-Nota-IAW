@@ -62,7 +62,7 @@
                     </td>
                     <td class="px-6 py-4 text-sm font-semibold"><?= $item['precio'] ?></td>
                     <td class="px-6 py-4 flex justify-center gap-4 text-lg">
-                        <form method="POST" action="borrar.php">
+                        <form method="GET" action="borrar.php">
                             <input type="hidden" name="id" value="<?= $item['id'] ?>" />
                             <a href="update.php?id=<?= $item['id'] ?>" class="text-blue-600 hover:text-blue-800 hover:text-xl">
                                 <i class="fas fa-edit"></i>
