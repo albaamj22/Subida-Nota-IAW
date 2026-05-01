@@ -6,7 +6,7 @@ CRUD completo para la gestión de un catálogo de videojuegos. Se puede visualiz
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 subidaNota/
@@ -33,7 +33,7 @@ subidaNota/
 
 ---
 
-## 📄 Descripción de cada fichero
+## Descripción de cada fichero
 
 ### `basedatos/conexion.php`
 Conecta a MySQL usando `mysqli_connect`. La conexión apunta a `127.0.0.1` con el usuario `uexamen`, la base de datos `examen` y el **puerto 3307** (Lo puse asi ya que en Docker indique dicho puerto).
@@ -72,7 +72,7 @@ Boceto HTML usado como referencia de diseño durante el desarrollo.
 
 ---
 
-## 🛠️ Tecnologías usadas
+## Tecnologías usadas
 
 | Tecnología | Uso |
 |---|---|
@@ -86,7 +86,7 @@ Boceto HTML usado como referencia de diseño durante el desarrollo.
 
 ---
 
-## 🐳 Configuración de la base de datos (Docker)
+## Configuración de la base de datos (Docker)
 
 La base de datos corre en un **contenedor Docker** con el puerto `3307` mapeado al host (en lugar del 3306 estándar), para no colisionar con una instalación local de MySQL o Laragon (que es el entorno de desarrollo que utilizo actuamente).
 
