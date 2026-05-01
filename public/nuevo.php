@@ -14,6 +14,18 @@
         $errores=false;
         if(!longitudCampoValida('nombre',$nombre,3,60)){
             $errores=true;
+        } else {
+            $qDup="select id from videojuegos where nombre=?";
+            $stmtDup=mysqli_stmt_init($conexion);
+            mysqli_stmt_prepare($stmtDup,$qDup);
+            mysqli_stmt_bind_param($stmtDup,'s',$nombre);
+            mysqli_stmt_execute($stmtDup);
+            mysqli_stmt_store_result($stmtDup);
+            if(mysqli_stmt_num_rows($stmtDup)>0){
+                $_SESSION['error_nombre']="Error, el nombre '$nombre' ya existe.";
+                $errores=true;
+            }
+            mysqli_stmt_close($stmtDup);
         }
         if(!longitudCampoValida('descripcion',$descripcion,5,500)){
             $errores=true;
