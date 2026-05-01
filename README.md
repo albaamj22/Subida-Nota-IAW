@@ -9,7 +9,7 @@ CRUD completo para la gestión de un catálogo de videojuegos. Se puede visualiz
 ## 📁 Estructura del Proyecto
 
 ```
-resolucionExamen/
+subidaNota/
 │
 ├── basedatos/
 │   └── conexion.php          # Establece la conexión MySQLi a la base de datos
